@@ -46,7 +46,8 @@ class _AnimationPageState extends State<AnimationPage> {
           selected = !selected;
           if (selected) {
             line1 = "My Love";
-            line2 = "Em luôn đặt chị ở vị trí này, nơi đó chưa có ai bước qua";
+            line2 =
+                "Em luôn đặt chị ở vị trí này, nơi đó chưa có ai bước qua\nEm thích chị ❤️❤️❤️";
           } else {
             line1 = "Love";
             line2 = "Chúc chị 8/3 vui vẻ và xinh đẹp";
@@ -110,6 +111,7 @@ class _AnimationPageState extends State<AnimationPage> {
                       child: Text(
                         line2,
                         key: ValueKey<String>(line2),
+                        textAlign: TextAlign.center,
                         style:
                             const TextStyle(color: Colors.green, fontSize: 30),
                       ),
